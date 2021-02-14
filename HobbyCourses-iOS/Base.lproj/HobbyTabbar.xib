@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="ipad9_7" orientation="landscape">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HobbyTabBarController">
+            <connections>
+                <outlet property="hobbyTab" destination="iN0-l3-epB" id="FoG-gD-2fl"/>
+                <outletCollection property="btnTabs" destination="n1c-ro-LOy" id="ftk-Zh-Z8r"/>
+                <outletCollection property="btnTabs" destination="30T-mD-JnH" id="78V-by-g5q"/>
+                <outletCollection property="btnTabs" destination="ucG-sY-1bB" id="dVS-Rc-0gK"/>
+                <outletCollection property="btnTabs" destination="Zrt-6s-ENN" id="BAY-7Q-O5U"/>
+                <outletCollection property="btnTabs" destination="hOk-px-I6Q" id="sMZ-E2-b9J"/>
+                <outletCollection property="btnTabsVendor" destination="ae6-mN-Xp0" id="Hzs-w7-eDk"/>
+                <outletCollection property="btnTabsVendor" destination="uCG-HV-3qi" id="UaA-gv-siz"/>
+                <outletCollection property="btnTabsVendor" destination="XoW-tw-F6W" id="sDv-p2-O6P"/>
+                <outletCollection property="btnTabsVendor" destination="BBF-Rm-sB3" id="fNx-AC-cpJ"/>
+                <outletCollection property="btnTabsVendor" destination="n4r-1l-4Zx" id="BVO-Ns-qPc"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" userLabel="Hobby Tab">
+            <rect key="frame" x="0.0" y="0.0" width="1025" height="56"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6WT-eF-NoN">
+                    <rect key="frame" x="0.0" y="0.0" width="1025" height="56"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="n1c-ro-LOy" userLabel="Home">
+                            <rect key="frame" x="50" y="0.0" width="85.5" height="56"/>
+                            <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="10"/>
+                            <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <inset key="contentEdgeInsets" minX="0.0" minY="-5" maxX="0.0" maxY="0.0"/>
+                            <state key="normal" image="ic_list"/>
+                            <state key="selected" image="ic_list_sel"/>
+                            <connections>
+                                <action selector="didTapOnTab:" destination="-1" eventType="touchUpInside" id="tLz-Hs-ICx"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="30T-mD-JnH" userLabel="Search">
+                            <rect key="frame" x="135.5" y="0.0" width="86" height="56"/>
+                            <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="10"/>
+                            <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <inset key="contentEdgeInsets" minX="0.0" minY="-5" maxX="0.0" maxY="0.0"/>
+                            <state key="normal" image="ic_search"/>
+                            <state key="selected" image="ic_search_sel"/>
+                            <connections>
+                                <action selector="didTapOnTab:" destination="-1" eventType="touchUpInside" id="HBo-IT-Bnj"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ucG-sY-1bB" userLabel="AddPoll">
+                            <rect key="frame" x="221.5" y="0.0" width="85.5" height="56"/>
+                            <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <inset key="contentEdgeInsets" minX="0.0" minY="-5" maxX="0.0" maxY="0.0"/>
+                            <state key="normal" image="ic_chat"/>
+                            <state key="selected" image="ic_chat_sel"/>
+                            <connections>
+                                <action selector="didTapOnTab:" destination="-1" eventType="touchUpInside" id="xWV-pS-hNV"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zrt-6s-ENN" userLabel="Notification">
+                            <rect key="frame" x="307" y="0.0" width="85.5" height="56"/>
+                            <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <inset key="contentEdgeInsets" minX="0.0" minY="-5" maxX="0.0" maxY="0.0"/>
+                            <state key="normal" image="ic_account"/>
+                            <state key="selected" image="ic_account_sel"/>
+                            <connections>
+                                <action selector="didTapOnTab:" destination="-1" eventType="touchUpInside" id="XFO-Wq-LIf"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hOk-px-I6Q" userLabel="Profile">
+                            <rect key="frame" x="889.5" y="0.0" width="85.5" height="56"/>
+                            <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <inset key="contentEdgeInsets" minX="0.0" minY="-5" maxX="0.0" maxY="0.0"/>
+                            <state key="normal" image="ic_settings"/>
+                            <state key="selected" image="ic_settings_sel"/>
+                            <connections>
+                                <action selector="didTapOnTab:" destination="-1" eventType="touchUpInside" id="c3O-nk-CwQ"/>
+                            </connections>
+                        </button>
+                        <label opaque="NO" userInteractionEnabled="NO" tag="333" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LLs-rl-W4B">
+                            <rect key="frame" x="392.5" y="0.0" width="497" height="56"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstItem="30T-mD-JnH" firstAttribute="leading" secondItem="n1c-ro-LOy" secondAttribute="trailing" id="22R-1y-QI6"/>
+                        <constraint firstItem="n1c-ro-LOy" firstAttribute="height" secondItem="hOk-px-I6Q" secondAttribute="height" id="3BJ-Vs-R2k"/>
+                        <constraint firstItem="n1c-ro-LOy" firstAttribute="width" secondItem="Zrt-6s-ENN" secondAttribute="width" id="3bC-wm-d6n"/>
+                        <constraint firstItem="Zrt-6s-ENN" firstAttribute="leading" secondItem="ucG-sY-1bB" secondAttribute="trailing" id="3eF-Ve-gFf"/>
+                        <constraint firstItem="n1c-ro-LOy" firstAttribute="height" secondItem="Zrt-6s-ENN" secondAttribute="height" id="Glh-Az-x9g"/>
+                        <constraint firstItem="n1c-ro-LOy" firstAttribute="width" secondItem="hOk-px-I6Q" secondAttribute="width" id="HDW-PE-AxO"/>
+                        <constraint firstItem="n1c-ro-LOy" firstAttribute="top" secondItem="ucG-sY-1bB" secondAttribute="top" id="Hfo-EL-qgo"/>
+                        <constraint firstItem="n1c-ro-LOy" firstAttribute="width" secondItem="ucG-sY-1bB" secondAttribute="width" id="Jc1-hX-ngd"/>
+                        <constraint firstItem="ucG-sY-1bB" firstAttribute="leading" secondItem="30T-mD-JnH" secondAttribute="trailing" id="N4T-e2-Mdv"/>
+                        <constraint firstItem="n1c-ro-LOy" firstAttribute="top" secondItem="Zrt-6s-ENN" secondAttribute="top" id="PbW-i4-Bgc"/>
+                        <constraint firstItem="LLs-rl-W4B" firstAttribute="leading" secondItem="Zrt-6s-ENN" secondAttribute="trailing" id="TW6-ZK-cvu"/>
+                        <constraint firstItem="LLs-rl-W4B" firstAttribute="top" secondItem="6WT-eF-NoN" secondAttribute="top" id="Ve1-4Q-Luh"/>
+                        <constraint firstItem="n1c-ro-LOy" firstAttribute="height" secondItem="30T-mD-JnH" secondAttribute="height" id="YmE-NV-0eu"/>
+                        <constraint firstItem="n1c-ro-LOy" firstAttribute="top" secondItem="6WT-eF-NoN" secondAttribute="top" id="azh-UC-Uv3"/>
+                        <constraint firstAttribute="bottom" secondItem="LLs-rl-W4B" secondAttribute="bottom" id="b4m-ji-ScW"/>
+                        <constraint firstAttribute="bottom" secondItem="n1c-ro-LOy" secondAttribute="bottom" id="ecT-PQ-b3Q"/>
+                        <constraint firstItem="n1c-ro-LOy" firstAttribute="height" secondItem="ucG-sY-1bB" secondAttribute="height" id="h2v-TD-DMM"/>
+                        <constraint firstItem="hOk-px-I6Q" firstAttribute="leading" secondItem="LLs-rl-W4B" secondAttribute="trailing" id="j3X-LU-LbN"/>
+                        <constraint firstItem="n1c-ro-LOy" firstAttribute="leading" secondItem="6WT-eF-NoN" secondAttribute="leading" constant="50" id="s8l-Jw-qMj"/>
+                        <constraint firstItem="n1c-ro-LOy" firstAttribute="width" secondItem="30T-mD-JnH" secondAttribute="width" id="sc9-P4-VPJ"/>
+                        <constraint firstItem="LLs-rl-W4B" firstAttribute="width" secondItem="n1c-ro-LOy" secondAttribute="width" multiplier="5.8" id="tZG-9M-Yo1"/>
+                        <constraint firstAttribute="trailing" secondItem="hOk-px-I6Q" secondAttribute="trailing" constant="50" id="uuk-Dx-NiD"/>
+                        <constraint firstItem="n1c-ro-LOy" firstAttribute="top" secondItem="30T-mD-JnH" secondAttribute="top" id="wDZ-BM-cvX"/>
+                        <constraint firstItem="n1c-ro-LOy" firstAttribute="top" secondItem="hOk-px-I6Q" secondAttribute="top" id="y4f-C3-S3W"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="6WT-eF-NoN" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="3Ea-JQ-lPy"/>
+                <constraint firstAttribute="bottom" secondItem="6WT-eF-NoN" secondAttribute="bottom" id="5pV-89-mto"/>
+                <constraint firstAttribute="trailing" secondItem="6WT-eF-NoN" secondAttribute="trailing" id="Tiv-eo-V6I"/>
+                <constraint firstItem="6WT-eF-NoN" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="wKc-wO-1qQ"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="525.5" y="274"/>
+        </view>
+        <view contentMode="scaleToFill" id="hIw-hr-mQe" userLabel="Hobby Tab">
+            <rect key="frame" x="0.0" y="0.0" width="1025" height="56"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jwm-RZ-vfb">
+                    <rect key="frame" x="0.0" y="0.0" width="1025" height="56"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ae6-mN-Xp0" userLabel="Home">
+                            <rect key="frame" x="50" y="0.0" width="85.5" height="56"/>
+                            <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="10"/>
+                            <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <inset key="contentEdgeInsets" minX="0.0" minY="-5" maxX="0.0" maxY="0.0"/>
+                            <state key="normal" image="ic_list"/>
+                            <state key="selected" image="ic_list_sel"/>
+                            <connections>
+                                <action selector="didTapOnTab:" destination="-1" eventType="touchUpInside" id="Eej-Xv-ned"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uCG-HV-3qi" userLabel="Search">
+                            <rect key="frame" x="135.5" y="0.0" width="86" height="56"/>
+                            <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="10"/>
+                            <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <inset key="contentEdgeInsets" minX="0.0" minY="-5" maxX="0.0" maxY="0.0"/>
+                            <state key="normal" image="ic_search"/>
+                            <state key="selected" image="ic_search_sel"/>
+                            <connections>
+                                <action selector="didTapOnTab:" destination="-1" eventType="touchUpInside" id="QBW-gL-GKF"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XoW-tw-F6W" userLabel="AddPoll">
+                            <rect key="frame" x="221.5" y="0.0" width="85.5" height="56"/>
+                            <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <inset key="contentEdgeInsets" minX="0.0" minY="-5" maxX="0.0" maxY="0.0"/>
+                            <state key="normal" image="ic_chat"/>
+                            <state key="selected" image="ic_chat_sel"/>
+                            <connections>
+                                <action selector="didTapOnTab:" destination="-1" eventType="touchUpInside" id="C27-kS-v7g"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BBF-Rm-sB3" userLabel="Notification">
+                            <rect key="frame" x="307" y="0.0" width="85.5" height="56"/>
+                            <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <inset key="contentEdgeInsets" minX="0.0" minY="-5" maxX="0.0" maxY="0.0"/>
+                            <state key="normal" image="ic_t_3"/>
+                            <state key="selected" image="ic_t_3_sel"/>
+                            <connections>
+                                <action selector="didTapOnTab:" destination="-1" eventType="touchUpInside" id="fVK-sH-8rO"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="n4r-1l-4Zx" userLabel="Profile">
+                            <rect key="frame" x="889.5" y="0.0" width="85.5" height="56"/>
+                            <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <inset key="contentEdgeInsets" minX="0.0" minY="-5" maxX="0.0" maxY="0.0"/>
+                            <state key="normal" image="ic_settings"/>
+                            <state key="selected" image="ic_settings_sel"/>
+                            <connections>
+                                <action selector="didTapOnTab:" destination="-1" eventType="touchUpInside" id="aEY-Bt-55h"/>
+                            </connections>
+                        </button>
+                        <label opaque="NO" userInteractionEnabled="NO" tag="333" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Z23-u0-eWL">
+                            <rect key="frame" x="392.5" y="0.0" width="497" height="56"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstItem="Z23-u0-eWL" firstAttribute="leading" secondItem="BBF-Rm-sB3" secondAttribute="trailing" id="0ck-Oa-VXn"/>
+                        <constraint firstItem="ae6-mN-Xp0" firstAttribute="width" secondItem="XoW-tw-F6W" secondAttribute="width" id="3kC-zf-DNt"/>
+                        <constraint firstItem="n4r-1l-4Zx" firstAttribute="leading" secondItem="Z23-u0-eWL" secondAttribute="trailing" id="4We-vZ-LR1"/>
+                        <constraint firstItem="uCG-HV-3qi" firstAttribute="leading" secondItem="ae6-mN-Xp0" secondAttribute="trailing" id="6eI-YA-oWZ"/>
+                        <constraint firstItem="ae6-mN-Xp0" firstAttribute="top" secondItem="n4r-1l-4Zx" secondAttribute="top" id="7PH-ZD-iko"/>
+                        <constraint firstItem="ae6-mN-Xp0" firstAttribute="top" secondItem="jwm-RZ-vfb" secondAttribute="top" id="9vX-E2-sxg"/>
+                        <constraint firstItem="BBF-Rm-sB3" firstAttribute="leading" secondItem="XoW-tw-F6W" secondAttribute="trailing" id="BPA-tc-qg6"/>
+                        <constraint firstItem="XoW-tw-F6W" firstAttribute="leading" secondItem="uCG-HV-3qi" secondAttribute="trailing" id="Cmm-CV-0Fe"/>
+                        <constraint firstAttribute="bottom" secondItem="ae6-mN-Xp0" secondAttribute="bottom" id="Dbo-Eg-uf4"/>
+                        <constraint firstAttribute="trailing" secondItem="n4r-1l-4Zx" secondAttribute="trailing" constant="50" id="GOV-Vw-dYn"/>
+                        <constraint firstItem="Z23-u0-eWL" firstAttribute="width" secondItem="ae6-mN-Xp0" secondAttribute="width" multiplier="5.8" id="KD7-yF-oHm"/>
+                        <constraint firstItem="ae6-mN-Xp0" firstAttribute="width" secondItem="n4r-1l-4Zx" secondAttribute="width" id="MhN-fH-f8S"/>
+                        <constraint firstItem="ae6-mN-Xp0" firstAttribute="leading" secondItem="jwm-RZ-vfb" secondAttribute="leading" constant="50" id="SZ3-Yf-Z92"/>
+                        <constraint firstItem="ae6-mN-Xp0" firstAttribute="height" secondItem="uCG-HV-3qi" secondAttribute="height" id="X99-i5-33j"/>
+                        <constraint firstItem="ae6-mN-Xp0" firstAttribute="top" secondItem="XoW-tw-F6W" secondAttribute="top" id="ZNz-Al-ucp"/>
+                        <constraint firstItem="ae6-mN-Xp0" firstAttribute="height" secondItem="XoW-tw-F6W" secondAttribute="height" id="c4H-1R-urj"/>
+                        <constraint firstItem="Z23-u0-eWL" firstAttribute="top" secondItem="jwm-RZ-vfb" secondAttribute="top" id="eTc-x2-NSd"/>
+                        <constraint firstAttribute="bottom" secondItem="Z23-u0-eWL" secondAttribute="bottom" id="gEu-7y-MML"/>
+                        <constraint firstItem="ae6-mN-Xp0" firstAttribute="width" secondItem="BBF-Rm-sB3" secondAttribute="width" id="hGb-Pu-Q2w"/>
+                        <constraint firstItem="ae6-mN-Xp0" firstAttribute="top" secondItem="BBF-Rm-sB3" secondAttribute="top" id="mGn-IH-s0B"/>
+                        <constraint firstItem="ae6-mN-Xp0" firstAttribute="height" secondItem="BBF-Rm-sB3" secondAttribute="height" id="sA3-VS-o51"/>
+                        <constraint firstItem="ae6-mN-Xp0" firstAttribute="height" secondItem="n4r-1l-4Zx" secondAttribute="height" id="tuv-8Y-HMe"/>
+                        <constraint firstItem="ae6-mN-Xp0" firstAttribute="width" secondItem="uCG-HV-3qi" secondAttribute="width" id="un1-cE-fCL"/>
+                        <constraint firstItem="ae6-mN-Xp0" firstAttribute="top" secondItem="uCG-HV-3qi" secondAttribute="top" id="wli-VO-5Lz"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="jwm-RZ-vfb" firstAttribute="top" secondItem="hIw-hr-mQe" secondAttribute="top" id="OHu-Zv-yBa"/>
+                <constraint firstItem="jwm-RZ-vfb" firstAttribute="leading" secondItem="hIw-hr-mQe" secondAttribute="leading" id="OyA-t3-j9j"/>
+                <constraint firstAttribute="trailing" secondItem="jwm-RZ-vfb" secondAttribute="trailing" id="qWM-MP-1Te"/>
+                <constraint firstAttribute="bottom" secondItem="jwm-RZ-vfb" secondAttribute="bottom" id="uxF-rf-Zrj"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="536" y="410"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="ic_account" width="45" height="45"/>
+        <image name="ic_account_sel" width="45" height="45"/>
+        <image name="ic_chat" width="45" height="45"/>
+        <image name="ic_chat_sel" width="45" height="45"/>
+        <image name="ic_list" width="45" height="43"/>
+        <image name="ic_list_sel" width="45" height="43"/>
+        <image name="ic_search" width="45" height="45"/>
+        <image name="ic_search_sel" width="45" height="45"/>
+        <image name="ic_settings" width="47" height="47"/>
+        <image name="ic_settings_sel" width="47" height="47"/>
+        <image name="ic_t_3" width="45" height="45"/>
+        <image name="ic_t_3_sel" width="45" height="45"/>
+    </resources>
+</document>

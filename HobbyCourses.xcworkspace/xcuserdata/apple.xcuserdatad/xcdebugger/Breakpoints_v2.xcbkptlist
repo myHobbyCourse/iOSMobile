@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   type = "0"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "HobbyCourses-iOS/iPhone/Qualification/QualificationViewController.swift"
+            timestampString = "622749379.7964931"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "150"
+            endingLineNumber = "150"
+            landmarkName = "updateQualification(arrQualification:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "HobbyCourses.QualificationViewController.(updateQualification in _B70948440FDEF7D9E4043A7DCD776323)(arrQualification: Swift.Array&lt;Swift.String&gt;) -&gt; ()"
+                  moduleName = "HobbyCourses"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/Shared/Relocated_Items/Security/Working/Other/For%20Sagar/MyHobby%20App/Working%20Code/myhobbycourses.com-ios-ipad%202/HobbyCourses-iOS/iPhone/Qualification/QualificationViewController.swift"
+                  timestampString = "615576949.723689"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "150"
+                  endingLineNumber = "150"
+                  offsetFromSymbolStart = "3399">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Optional&lt;Swift.String&gt;, Swift.Dictionary&lt;Swift.String, Any&gt;, Swift.Optional&lt;Swift.Error&gt;, Swift.Optional&lt;Swift.Int&gt;) -&gt; () in HobbyCourses.QualificationViewController.(updateQualification in _B70948440FDEF7D9E4043A7DCD776323)(arrQualification: Swift.Array&lt;Swift.String&gt;) -&gt; ()"
+                  moduleName = "HobbyCourses"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/Shared/Relocated_Items/Security/Working/Other/For%20Sagar/MyHobby%20App/Working%20Code/myhobbycourses.com-ios-ipad%202/HobbyCourses-iOS/iPhone/Qualification/QualificationViewController.swift"
+                  timestampString = "615576949.729152"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "151"
+                  endingLineNumber = "151"
+                  offsetFromSymbolStart = "85">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "HobbyCourses-iOS/iPhone/Qualification/QualificationViewController.swift"
+            timestampString = "622749379.7972389"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "186"
+            endingLineNumber = "186"
+            landmarkName = "collectionView(_:cellForItemAt:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "HobbyCourses-iOS/iPhone/Qualification/QualificationViewController.swift"
+            timestampString = "622749379.797725"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "212"
+            endingLineNumber = "212"
+            landmarkName = "dict"
+            landmarkType = "24">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "HobbyCourses-iOS/iPhone/Qualification/QualificationViewController.swift"
+            timestampString = "622749379.798189"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "39"
+            endingLineNumber = "39"
+            landmarkName = "viewDidLoad()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>

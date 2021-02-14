@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CFBundleDevelopmentRegion</key>
+	<string>en</string>
+	<key>CFBundleExecutable</key>
+	<string>$(EXECUTABLE_NAME)</string>
+	<key>CFBundleIdentifier</key>
+	<string>$(PRODUCT_BUNDLE_IDENTIFIER)</string>
+	<key>CFBundleInfoDictionaryVersion</key>
+	<string>6.0</string>
+	<key>CFBundleName</key>
+	<string>HobbyCourses</string>
+	<key>CFBundlePackageType</key>
+	<string>APPL</string>
+	<key>CFBundleShortVersionString</key>
+	<string>1.3</string>
+	<key>CFBundleSignature</key>
+	<string>????</string>
+	<key>CFBundleURLTypes</key>
+	<array>
+		<dict>
+			<key>CFBundleTypeRole</key>
+			<string>Editor</string>
+			<key>CFBundleURLSchemes</key>
+			<array>
+				<string>fb394605497414395</string>
+			</array>
+		</dict>
+		<dict>
+			<key>CFBundleTypeRole</key>
+			<string>Editor</string>
+			<key>CFBundleURLSchemes</key>
+			<array>
+				<string>username</string>
+			</array>
+		</dict>
+		<dict>
+			<key>CFBundleTypeRole</key>
+			<string>Editor</string>
+			<key>CFBundleURLName</key>
+			<string></string>
+			<key>CFBundleURLSchemes</key>
+			<array>
+				<string>com.googleusercontent.apps.309766409912-v0s6q5vi7os3193qg897q9n5octrl9mr</string>
+			</array>
+		</dict>
+	</array>
+	<key>CFBundleVersion</key>
+	<string>2</string>
+	<key>Fabric</key>
+	<dict>
+		<key>APIKey</key>
+		<string>aafee648e6188e6ecbaf9be0159ecd6ca943e29f</string>
+		<key>Kits</key>
+		<array>
+			<dict>
+				<key>KitInfo</key>
+				<dict>
+					<key>consumerKey</key>
+					<string>SOWc4U98hHLlediqhV9mkSOiZ</string>
+					<key>consumerSecret</key>
+					<string>HJpPRVSS8TLM3TVWBT6NVOqkyUEROIuuHtMjp8kiD6tC7ipi0u</string>
+				</dict>
+				<key>KitName</key>
+				<string>Twitter</string>
+			</dict>
+			<dict>
+				<key>KitInfo</key>
+				<dict/>
+				<key>KitName</key>
+				<string>Crashlytics</string>
+			</dict>
+		</array>
+	</dict>
+	<key>FacebookAppID</key>
+	<string>394605497414395</string>
+	<key>FacebookDisplayName</key>
+	<string>myhobbycourses</string>
+	<key>LSApplicationQueriesSchemes</key>
+	<array>
+		<string>fbauth2</string>
+		<string>comgooglemaps</string>
+	</array>
+	<key>LSRequiresIPhoneOS</key>
+	<true/>
+	<key>NSAppTransportSecurity</key>
+	<dict>
+		<key>NSAllowsArbitraryLoads</key>
+		<true/>
+	</dict>
+	<key>NSCameraUsageDescription</key>
+	<string>We need to access your camera to serve better</string>
+	<key>NSContactsUsageDescription</key>
+	<string>We need to access your contact to serve better.</string>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>myHobbyCourses would like to access your location to serve you better.</string>
+	<key>NSPhotoLibraryUsageDescription</key>
+	<string>Please allow us to access your photos</string>
+	<key>UIAppFonts</key>
+	<array>
+		<string>Continuum-Medium.ttf</string>
+		<string>Neometric-Medium.otf</string>
+		<string>Playlist Caps.otf</string>
+		<string>MARK SIMONSON - PROXIMA NOVA BLACK ITALIC</string>
+		<string>MARK SIMONSON - PROXIMA NOVA EXTRABOLD ITALIC.OTF</string>
+		<string>MARK SIMONSON - PROXIMA NOVA THIN ITALIC.OTF</string>
+		<string>MARK SIMONSON - PROXIMA NOVA THIN.OTF</string>
+		<string>PROXIMANOVA-BLACK.OTF</string>
+		<string>PROXIMANOVA-BOLD.OTF</string>
+		<string>PROXIMANOVA-BOLDIT.OTF</string>
+		<string>PROXIMANOVA-EXTRABOLD.OTF</string>
+		<string>PROXIMANOVA-LIGHT.OTF</string>
+		<string>PROXIMANOVA-LIGHTITALIC.OTF</string>
+		<string>PROXIMANOVA-REGULAR.OTF</string>
+		<string>OpenSans-Bold.ttf</string>
+		<string>OpenSans-BoldItalic.ttf</string>
+		<string>OpenSans-ExtraBold.ttf</string>
+		<string>OpenSans-ExtraBoldItalic.ttf</string>
+		<string>OpenSans-Italic.ttf</string>
+		<string>OpenSans-Light.ttf</string>
+		<string>OpenSans-LightItalic.ttf</string>
+		<string>OpenSans-Regular.ttf</string>
+		<string>OpenSans-Semibold.ttf</string>
+		<string>OpenSans-SemiboldItalic.ttf</string>
+	</array>
+	<key>UIMainStoryboardFile</key>
+	<string>Entry</string>
+	<key>UIMainStoryboardFile~ipad</key>
+	<string>StoryboardiPad</string>
+	<key>UIRequiredDeviceCapabilities</key>
+	<array>
+		<string>armv7</string>
+	</array>
+	<key>UIRequiresFullScreen</key>
+	<true/>
+	<key>UIStatusBarHidden</key>
+	<false/>
+	<key>UIStatusBarStyle</key>
+	<string>UIStatusBarStyleLightContent</string>
+	<key>UISupportedInterfaceOrientations</key>
+	<array>
+		<string>UIInterfaceOrientationPortrait</string>
+	</array>
+	<key>UISupportedInterfaceOrientations~ipad</key>
+	<array>
+		<string>UIInterfaceOrientationLandscapeLeft</string>
+		<string>UIInterfaceOrientationLandscapeRight</string>
+	</array>
+	<key>UIViewControllerBasedStatusBarAppearance</key>
+	<true/>
+</dict>
+</plist>

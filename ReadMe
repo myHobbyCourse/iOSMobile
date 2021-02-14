@@ -1,0 +1,22 @@
+
+
+======  READ ME =======
+
+1) First realse to app store 1.0   // 02 - AUG - 2016
+ -- Including search part with basic function of app like
+    - course form with mutiple batches,course
+    - Course List [Top 50 course] Filter & search
+    - Course detail - [Video,recent & local course,review etc..more]
+    - Other part of app with full tested.
+
+    == App reject many time issue like
+    - IPV6 issue
+    - Device name is differnt then itunes name
+    - Content dummy
+
+2) Second release to app store 1.1   // 15 - AUG - 2016
+    – Added image compresions for course listing and other screens
+    - Updated Course Attendance Facility for Vendors
+    - Added Course History
+    – Improved Course Calendar Display
+    - Added Search facility at Order, Messages, Sales Info Screens

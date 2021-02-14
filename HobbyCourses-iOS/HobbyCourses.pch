@@ -1,0 +1,30 @@
+//
+//  HobbyCourses-iOS.pch
+//  HobbyCourses-iOS
+//
+//  Created by Code Atena on 11/23/15.
+//  Copyright © 2015 Code Atena. All rights reserved.
+//
+
+#ifndef HobbyCourses_iOS_pch
+#define HobbyCourses_iOS_pch
+#define _deviceName [[UIDevice currentDevice] platformString]
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+#import <AFNetworking/AFNetworking.h>
+#import "ApiService.h"
+#import "Constants.h"
+#import "AppMessages.h"
+
+
+#define kMerchantID @"merchant.com.hobbycourses"
+//#define HCLog(...) (void)0
+
+#endif /* HobbyCourses_iOS_pch */
+
+ #ifdef DEBUG
+ #   define HCLog(...) NSLog(__VA_ARGS__)
+ #else
+ #   define HCLog(...) (void)0
+ #endif
+

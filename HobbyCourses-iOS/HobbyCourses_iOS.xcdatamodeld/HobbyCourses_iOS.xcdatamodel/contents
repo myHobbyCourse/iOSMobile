@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="11759" systemVersion="16B2555" minimumToolsVersion="Xcode 7.3" sourceLanguage="Objective-C" userDefinedModelVersionIdentifier="">
+    <entity name="AmeitiesList" representedClassName="AmeitiesList" syncable="YES">
+        <attribute name="amIndex" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="amName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="courseID" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="course" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="CourseForm" inverseName="amenities" inverseEntity="CourseForm" syncable="YES"/>
+    </entity>
+    <entity name="BatchTimeTable" representedClassName="BatchTimeTable" syncable="YES">
+        <attribute name="mCompareDate" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="mEndTime" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="mForenKey" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="mStartTime" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="mUid" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="CategoryTbl" representedClassName="CategoryTbl" syncable="YES">
+        <attribute name="categoryId" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="categoryImgUrl" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="categoryName" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="course" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="CourseForm" inverseName="category" inverseEntity="CourseForm" syncable="YES"/>
+        <relationship name="subcategorys" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="SubCategoryTbl" inverseName="category" inverseEntity="SubCategoryTbl" syncable="YES"/>
+    </entity>
+    <entity name="CertificateList" representedClassName="CertificateList" syncable="YES">
+        <attribute name="certificateIndex" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="certificateName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="courseID" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="course" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="CourseForm" inverseName="certificates" inverseEntity="CourseForm" syncable="YES"/>
+    </entity>
+    <entity name="ClassList" representedClassName="ClassList" syncable="YES">
+        <attribute name="classDiscount" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="classEndDate" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="classId" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="classRegPrice" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="classSession" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="classSize" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="classStartDate" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="courseID" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="course" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="CourseForm" inverseName="classes" inverseEntity="CourseForm" syncable="YES"/>
+        <relationship name="schedules" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="ScheduleList" inverseName="classList" inverseEntity="ScheduleList" syncable="YES"/>
+    </entity>
+    <entity name="CourseForm" representedClassName="CourseForm" syncable="YES">
+        <attribute name="courseAdd1" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="courseAdd2" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="courseAgeGp" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="courseAgeGpValue" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="courseBatchSize" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="courseCancellation" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="courseCity" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="courseClassSize" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="courseDescription" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="courseIntroduction" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="courseIsMoneyBack" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="courseIsTrial" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="courseLat" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="courseLng" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="courseNid" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="coursePinCode" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="coursePlaces" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="courseReqirements" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="courseTitle" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="courseVenueName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="tutorName" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="amenities" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="AmeitiesList" inverseName="course" inverseEntity="AmeitiesList" syncable="YES"/>
+        <relationship name="category" optional="YES" maxCount="1" deletionRule="Cascade" destinationEntity="CategoryTbl" inverseName="course" inverseEntity="CategoryTbl" syncable="YES"/>
+        <relationship name="certificates" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="CertificateList" inverseName="course" inverseEntity="CertificateList" syncable="YES"/>
+        <relationship name="classes" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="ClassList" inverseName="course" inverseEntity="ClassList" syncable="YES"/>
+        <relationship name="images" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="ImageList" inverseName="course" inverseEntity="ImageList" syncable="YES"/>
+        <relationship name="subcategory" optional="YES" maxCount="1" deletionRule="Cascade" destinationEntity="SubCategoryTbl" inverseName="course" inverseEntity="SubCategoryTbl" syncable="YES"/>
+        <relationship name="videos" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="VideoList" inverseName="course" inverseEntity="VideoList" syncable="YES"/>
+    </entity>
+    <entity name="CourseOfflineEntity" representedClassName="CourseOfflineEntity" syncable="YES">
+        <attribute name="courseDetails" optional="YES" attributeType="Binary" syncable="YES"/>
+        <attribute name="courseImage" optional="YES" attributeType="Binary" syncable="YES"/>
+        <attribute name="uid" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="CourseOrderSync" syncable="YES">
+        <attribute name="courseJson" optional="YES" attributeType="Binary" syncable="YES"/>
+        <attribute name="uid" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="ImageList" representedClassName="ImageList" syncable="YES">
+        <attribute name="courseID" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="imgIndex" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="imgUrl" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="course" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="CourseForm" inverseName="images" inverseEntity="CourseForm" syncable="YES"/>
+    </entity>
+    <entity name="MyCourseOffline" representedClassName="MyCourseOffline" syncable="YES">
+        <attribute name="mBatchId" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="mBatchSize" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="mDiscount" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="mEndDate" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="mPrice" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="mSession" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="mStartDate" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="mUid" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="ScheduleList" representedClassName="ScheduleList" syncable="YES">
+        <attribute name="classId" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="sessionDate" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="sessionEnd" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="sessionId" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="sessionStart" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <relationship name="classList" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="ClassList" inverseName="schedules" inverseEntity="ClassList" syncable="YES"/>
+    </entity>
+    <entity name="SubCategoryTbl" representedClassName="SubCategoryTbl" syncable="YES">
+        <attribute name="course_count" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="subCategoryId" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="subCategoryImgUrl" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="subCategoryName" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="category" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="CategoryTbl" inverseName="subcategorys" inverseEntity="CategoryTbl" syncable="YES"/>
+        <relationship name="course" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="CourseForm" inverseName="subcategory" inverseEntity="CourseForm" syncable="YES"/>
+    </entity>
+    <entity name="SubmitForm" representedClassName="SubmitForm" syncable="YES">
+        <attribute name="courseData" optional="YES" attributeType="Binary" syncable="YES"/>
+        <attribute name="courseID" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="TempStore" representedClassName="TempStore" syncable="YES">
+        <attribute name="mCompareDate" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="mEndTime" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="mStartTime" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="rowId" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="VideoList" representedClassName="VideoList" syncable="YES">
+        <attribute name="courseID" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="videoIndex" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="videoUrl" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="course" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="CourseForm" inverseName="videos" inverseEntity="CourseForm" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="BatchTimeTable" positionX="-108" positionY="243" width="128" height="120"/>
+        <element name="CourseOfflineEntity" positionX="7" positionY="-90" width="128" height="90"/>
+        <element name="CourseOrderSync" positionX="-261" positionY="195" width="128" height="75"/>
+        <element name="MyCourseOffline" positionX="-90" positionY="-18" width="128" height="165"/>
+        <element name="SubmitForm" positionX="-207" positionY="-108" width="128" height="75"/>
+        <element name="TempStore" positionX="-351" positionY="27" width="128" height="105"/>
+        <element name="CourseForm" positionX="79" positionY="153" width="128" height="360"/>
+        <element name="ClassList" positionX="79" positionY="234" width="128" height="195"/>
+        <element name="ScheduleList" positionX="43" positionY="294" width="128" height="135"/>
+        <element name="ImageList" positionX="-108" positionY="144" width="128" height="30"/>
+        <element name="AmeitiesList" positionX="-99" positionY="153" width="128" height="30"/>
+        <element name="VideoList" positionX="-90" positionY="162" width="128" height="30"/>
+        <element name="CertificateList" positionX="-81" positionY="171" width="128" height="105"/>
+        <element name="CategoryTbl" positionX="-135" positionY="117" width="128" height="120"/>
+        <element name="SubCategoryTbl" positionX="-126" positionY="126" width="128" height="135"/>
+    </elements>
+</model>
